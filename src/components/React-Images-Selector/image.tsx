@@ -41,7 +41,7 @@ const Image: FunctionComponent<ImageProps> = ({
       />
       <div className="checkboxWrapper">
         {SelectorControl ? (
-          <SelectorControl checked={isSelected} />
+          <SelectorControl checked={isSelected} multiple={multiple} image={image} />
         ) : (
           <input
             type={multiple ? "checkbox" : "radio"}
